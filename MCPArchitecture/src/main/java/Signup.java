@@ -33,10 +33,10 @@ public void service(HttpServletRequest req,HttpServletResponse res) {
 		String  gmail=req.getParameter("gmail");
 		boolean result=model.performRegistration(id, pass, name, age, gmail);
 if(result) {
-	res.sendRedirect("/MCPArchitecture/Login.html");
+	res.sendRedirect("/MVCArchitecture/Login.html");
 }
 else {
-	System.out.println("/MCPArchitecture/SignUp.html");
+	res.sendRedirect("/MVCArchitecture/SignUp.html");
 }
 	}catch (Exception e) {
 

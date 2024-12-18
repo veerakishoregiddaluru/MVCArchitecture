@@ -25,10 +25,11 @@ public void service(HttpServletRequest req,HttpServletResponse res) {
 		
 		boolean result=model.loginForm(id, pass);
 		if(result) {
-			res.sendRedirect("/MCPArchitecture/Welcome.html");
+			res.sendRedirect("/MVCArchitecture/Welcome.html");
+
 		}
 		else {
-			res.sendRedirect("/MCPArchitecture/SignUp.html");
+			res.sendRedirect("/MVCArchitecture/SignUp.html");
 		}
 		
 	}catch (Exception e) {

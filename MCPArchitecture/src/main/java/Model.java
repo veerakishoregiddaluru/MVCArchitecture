@@ -9,6 +9,7 @@ public class Model {
 	Connection con=null;
 	PreparedStatement ps=null;
 	PreparedStatement ps2=null;
+	PreparedStatement ps3=null;
 	ResultSet rs=null;
 	String path="com.mysql.cj.jdbc.Driver";
 	String url="jdbc:mysql://localhost:3306/kodnest";
@@ -25,7 +26,6 @@ public Model() {
 		con=DriverManager.getConnection(url,user,pass);
 		ps=con.prepareStatement(sql);
 		ps2=con.prepareStatement(sql2);
-		
 	}catch(Exception e) {
 		e.printStackTrace();
 	}
@@ -70,6 +70,9 @@ e.printStackTrace();
 		
 		return false;
 	}
+	
+	
+	
 
 }
 
